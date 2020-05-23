@@ -1,0 +1,10 @@
+.header {
+    font-size:1.4rem;
+    display: flex;
+    //logo, search box, notification icons + user
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-gray-light-2);
+}
