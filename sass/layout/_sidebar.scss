@@ -1,0 +1,9 @@
+.sidebar {
+    background-color: var(--color-gray-dark-1);
+    //grow shrink width
+    flex: 0 0 18%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
