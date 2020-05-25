@@ -10,11 +10,20 @@
     //applies to color change on hover
     transition: all .2s;
 
-    &:hover {
-        color: var(--color-gray-dark-1);
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
     }
 
-    &:focus {
+    &:hover {
+        color: var(--color-gray-dark-1);
+    
+        span {
+            margin-left:8px;
+        }
+    }
+
+    &:active {
         outline: none;
         animation: pulsate 1s infinite;
 
