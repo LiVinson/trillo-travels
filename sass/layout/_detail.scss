@@ -5,14 +5,35 @@
     border-bottom: var(--line);
     font-size:1.4rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+        flex-direction:column;
+    }
+
+
 }
 
 .description {
     background-color: #fff;
     box-shadow: var(--shadow-light);
-    padding: 3rem;
-    
+    padding: 3rem;    
     flex: 0 0 60%;
     margin-right:4.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex: 1;
+        padding: 2rem;   
+        margin-right:3rem; 
+
+    }
+
+    
+    @media only screen and (max-width: $bp-xsmall) {
+        margin-right:0rem;
+        margin-bottom: 3rem; 
+    }
 }   
 
