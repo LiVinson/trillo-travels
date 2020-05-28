@@ -61,6 +61,12 @@
         position:relative;
         z-index: 11;
 
+        & span {
+            @media only screen and (max-width: $bp-xsmall) {
+                text-align: center;
+            }
+        }
+
         @media only screen and (max-width: $bp-medium) {
             justify-content: center;
             padding: 2rem;
@@ -93,6 +99,8 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+
 
         @media only screen and (max-width: $bp-xsmall) {
             margin-right: 0rem;

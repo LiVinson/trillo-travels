@@ -4,6 +4,11 @@
     border-bottom: var(--line);
     align-items: center;
 
+    
+    @media only screen and (max-width: $bp-xsmall) {
+        flex-wrap: wrap;
+    }
+
     &__heading {
         font-size: 2.25rem;
         font-weight: 300;
@@ -13,7 +18,11 @@
 
         @media only screen and (max-width: $bp-xsmall) {
             font-size: 1.8rem;
-            padding: 1.25rem 2rem;
+            padding: 1.25rem 3rem;
+        }
+
+        @media only screen and (max-width: $bp-xxSmall) {
+            padding-bottom: 0;
         }
     }
 
@@ -23,6 +32,19 @@
         margin-right: auto;
         //removes white space from below children (stars)
         display: flex;    
+        
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right:0;
+            margin-left: auto;
+        }   
+
+        @media only screen and (max-width: $bp-xxSmall) {
+            order: 1;
+            flex: 0 0 33%;
+            margin-left:5rem;
+            margin-right: auto;
+
+         }
     }
 
     &__icon-star,
@@ -30,12 +52,34 @@
         width: 1.75rem;
         height: 1.75rem;
         fill: var(--color-primary); 
+        @media only screen and (max-width: $bp-xxSmall) {
+            width: 2.75rem;
+            height: 2.75rem;
+            padding-right: 1rem;
+        }
     }
 
     &__location {
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            order: 1;
+            flex: 1 0 33%;
+            padding-left: 3rem;
+            padding-bottom: 1rem;
+     
+        }
+
+        @media only screen and (max-width: $bp-xxSmall) {
+            order: 0;
+            padding-top: 1.25rem;
+            // flex: 0 0 33%;
+        //     padding-left: 2rem;
+        //     padding-bottom: 1rem;
+        //     margin: 0 auto;
+        }
     }
 
     &__icon-location {    
@@ -56,7 +100,25 @@
 
         @media only screen and (max-width: $bp-xsmall) {
             padding: 0 1.5rem;
+
+        }  
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0 4rem;
+            margin-bottom: -1.5rem;
+            margin-top: 1rem;
         }   
+
+        
+        @media only screen and (max-width: $bp-xxSmall) {
+            order: 1;
+            margin: 0 3rem 0 0;
+            margin-bottom: 0rem;
+            margin-top:0;
+            padding: 0 6rem;
+
+         }
+        
     }
 
     &__rating-average {
@@ -70,6 +132,7 @@
     }
 
     &__rating-count {
+        
 
     }
 }
